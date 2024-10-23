@@ -1,10 +1,17 @@
 import 'package:get/get.dart';
 
-class Student {
-  // var name = "Shahin".obs;
-  // var age = 25.obs;
+class Messages extends Translations{
+  @override
+  Map<String, Map<String, String>> get keys => {
+    'en_US' : {
+      'hello' : 'Hello',
+    },
+    'hi_IN' : {
+      'hello' : 'Hindi',
+    },
+    'fr_FR' : {
+      'hello' : 'Bonjour',
+    },
+  };
 
-  var name;
-  var age;
-  Student({this.name, this.age});
 }

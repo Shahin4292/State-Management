@@ -16,20 +16,26 @@ class HomeScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Obx(
-              () => Text(myController.student.value.name),
-            ),
+            // Obx(
+            //   () => Text(myController.student.value.name),
+            // ),
+            Text('hello'.tr),
             const SizedBox(
               height: 20,
             ),
             TextButton(
                 onPressed: () {
-                  myController.control();
+                  myController.changeLng('hi', 'IN');
                 },
                 child: const Icon(Icons.add)),
             TextButton(
                 onPressed: () {
-                  myController.cont();
+                  myController.changeLng('fr', 'FR');
+                },
+                child: const Icon(Icons.add)),
+            TextButton(
+                onPressed: () {
+                  myController.changeLng('en', 'US');
                 },
                 child: const Icon(Icons.add)),
           ],
